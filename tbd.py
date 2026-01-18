@@ -30,8 +30,5 @@ def move_servos_slow(angle, step=1, delay=0.03):
     servo2.angle = -angle   # inverted servo
 
 while True:
-    move_servos_slow(45, step=1, delay=0.03)
-    time.sleep(1)
-
-    move_servos_slow(-45, step=1, delay=0.03)
+    move_servos_slow(45, step=1, delay=0.3)
     time.sleep(1)
